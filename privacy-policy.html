@@ -3,33 +3,258 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Política de Privacidade do aplicativo PlantOn." />
   <title>Política de Privacidade - PlantOn</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --primary: #2563eb;
+      --text: #172033;
+      --muted: #5c667a;
+      --background: #f4f6fb;
+      --surface: #ffffff;
+      --border: #dce3f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    .hero,
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(23, 32, 51, 0.08);
+    }
+
+    .hero {
+      padding: 32px;
+      margin-bottom: 20px;
+      border-top: 6px solid var(--primary);
+    }
+
+    .content {
+      padding: 8px 32px 32px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 0;
+      margin-bottom: 10px;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 8px;
+      background: #eaf1ff;
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 1.35rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 760px;
+    }
+
+    .notice {
+      margin: 20px 0;
+      padding: 16px;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      background: #eff6ff;
+      color: #1e3a8a;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 18px;
+    }
+
+    .footer {
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.92rem;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding: 20px 0;
+      }
+
+      .hero,
+      .content {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <main style="max-width: 760px; margin: 40px auto; font-family: Arial, sans-serif; line-height: 1.6; padding: 0 16px;">
-    <h1>Política de Privacidade - PlantOn</h1>
+  <main class="page">
+    <section class="hero" aria-labelledby="titulo">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>PlantOn</span>
+      </div>
+      <h1 id="titulo">Política de Privacidade</h1>
+      <p class="lead">
+        Esta Política de Privacidade explica como o aplicativo PlantOn trata as informações utilizadas para organizar plantões, locais, férias, faltas, trocas e extras.
+      </p>
+      <p class="updated">Última atualização: 17 de abril de 2026.</p>
+    </section>
 
-    <p>O PlantOn é um aplicativo para organização pessoal de plantões. O aplicativo não exige cadastro, login ou criação de conta.</p>
+    <section class="content">
+      <div class="notice">
+        O PlantOn não exige cadastro, login ou criação de conta. Os dados de plantões cadastrados pelo usuário ficam armazenados localmente no próprio dispositivo.
+      </div>
 
-    <h2>Dados armazenados pelo aplicativo</h2>
-    <p>Os dados inseridos pelo usuário, como plantões, locais de trabalho, férias, faltas, trocas, extras e configurações, são armazenados localmente no dispositivo do usuário.</p>
+      <h2>1. Quem somos</h2>
+      <p>
+        O PlantOn é um aplicativo de organização pessoal de plantões, desenvolvido para ajudar o usuário a visualizar escalas, registrar faltas, trocas, férias, plantões extras e acompanhar informações de trabalho.
+      </p>
 
-    <h2>Backup dos dados</h2>
-    <p>O aplicativo permite que o usuário gere um arquivo de backup em formato JSON. Esse arquivo é criado somente mediante ação do usuário e pode ser salvo ou compartilhado pelo próprio usuário conforme sua escolha.</p>
+      <h2>2. Dados informados pelo usuário</h2>
+      <p>
+        O usuário pode inserir informações como:
+      </p>
+      <ul>
+        <li>datas, horários e tipos de plantão;</li>
+        <li>locais de trabalho cadastrados pelo usuário;</li>
+        <li>férias, faltas, trocas e plantões extras;</li>
+        <li>observações adicionadas manualmente;</li>
+        <li>estado e município escolhidos para exibição de feriados locais;</li>
+        <li>valores monetários relacionados a plantões extras, quando cadastrados pelo usuário.</li>
+      </ul>
+      <p>
+        Essas informações são usadas para o funcionamento do próprio aplicativo e para exibir calendários, análises e resumos ao usuário.
+      </p>
 
-    <h2>Compartilhamento de dados</h2>
-    <p>O PlantOn não possui servidor próprio e não envia os dados de plantões do usuário para uma base externa controlada pelo desenvolvedor.</p>
+      <h2>3. Armazenamento local</h2>
+      <p>
+        Os dados de organização de plantões são armazenados localmente no dispositivo do usuário. O PlantOn não possui servidor próprio para receber, processar ou armazenar esses dados.
+      </p>
+      <p>
+        Caso o usuário desinstale o aplicativo, limpe os dados do app ou troque de dispositivo sem realizar backup, as informações locais podem ser perdidas.
+      </p>
 
-    <h2>Anúncios</h2>
-    <p>O aplicativo utiliza o Google AdMob para exibição de anúncios. O Google AdMob pode coletar dados técnicos, identificadores do dispositivo e informações relacionadas a anúncios, conforme as políticas do Google.</p>
+      <h2>4. Backup e restauração</h2>
+      <p>
+        O PlantOn permite que o usuário gere um arquivo de backup em formato JSON. Esse arquivo é criado somente mediante ação do usuário.
+      </p>
+      <p>
+        O usuário decide onde salvar, compartilhar ou armazenar esse arquivo. Ao restaurar um backup, os dados presentes no arquivo são importados novamente para o aplicativo.
+      </p>
 
-    <h2>Exclusão dos dados</h2>
-    <p>O usuário pode apagar os dados do aplicativo a qualquer momento limpando os dados do app nas configurações do dispositivo ou desinstalando o aplicativo.</p>
+      <h2>5. Anúncios e serviços de terceiros</h2>
+      <p>
+        O aplicativo utiliza o Google AdMob para exibição de anúncios. Serviços de anúncios podem coletar ou processar dados técnicos, identificadores do dispositivo, informações de interação com anúncios e dados necessários para medição, segurança, prevenção de fraude e personalização, conforme as políticas do Google.
+      </p>
+      <p>
+        Para saber mais, consulte a política de privacidade do Google:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>.
+      </p>
 
-    <h2>Contato</h2>
-    <p>Para dúvidas sobre esta política, entre em contato pelo e-mail: suporte@dmbsoftware.com.br.</p>
+      <h2>6. Compartilhamento de dados</h2>
+      <p>
+        O PlantOn não vende os dados informados pelo usuário e não compartilha os dados de plantões com servidores próprios do desenvolvedor.
+      </p>
+      <p>
+        O compartilhamento pode ocorrer apenas quando o próprio usuário exporta, salva, envia ou restaura um arquivo de backup, ou quando serviços de terceiros, como o Google AdMob, realizam tratamentos de dados conforme suas próprias políticas.
+      </p>
 
-    <p>Última atualização: 17 de abril de 2026.</p>
+      <h2>7. Permissões do dispositivo</h2>
+      <p>
+        O aplicativo pode utilizar permissões necessárias para funcionalidades como anúncios, acesso a arquivos de backup ou recursos exigidos pelo sistema operacional. As permissões solicitadas podem variar conforme a versão do Android e as funcionalidades utilizadas pelo usuário.
+      </p>
+
+      <h2>8. Segurança</h2>
+      <p>
+        O PlantOn busca manter os dados do usuário no próprio dispositivo. Ainda assim, o usuário é responsável por proteger o acesso ao aparelho, manter backups em locais seguros e evitar compartilhar arquivos de backup com pessoas não autorizadas.
+      </p>
+
+      <h2>9. Exclusão dos dados</h2>
+      <p>
+        O usuário pode excluir os dados do PlantOn limpando os dados do aplicativo nas configurações do dispositivo ou desinstalando o app. Arquivos de backup salvos fora do aplicativo devem ser excluídos manualmente pelo próprio usuário no local onde foram armazenados.
+      </p>
+
+      <h2>10. Privacidade de crianças</h2>
+      <p>
+        O PlantOn não é direcionado a crianças. O aplicativo foi criado para uso pessoal por profissionais que desejam organizar plantões e rotinas de trabalho.
+      </p>
+
+      <h2>11. Alterações nesta política</h2>
+      <p>
+        Esta Política de Privacidade pode ser atualizada para refletir melhorias no aplicativo, mudanças legais ou ajustes em serviços utilizados. A data de atualização será revisada sempre que houver alterações relevantes.
+      </p>
+
+      <h2>12. Contato</h2>
+      <p>
+        Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento de dados no PlantOn, entre em contato pelo e-mail:
+        <a href="mailto:suporte@dmbsoftware.com.br">suporte@dmbsoftware.com.br</a>.
+      </p>
+    </section>
+
+    <p class="footer">PlantOn - Organização pessoal de plantões.</p>
   </main>
 </body>
 </html>
